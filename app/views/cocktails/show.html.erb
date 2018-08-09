@@ -1,0 +1,18 @@
+<h1>Cocktails#show</h1>
+<p>Each individual cocktail</p>
+
+<h2><%= @cocktail.name %></h2>
+<p>Ingredients</p>
+
+<button class= 'btn btn-secondary'><%= link_to "Back to Home", cocktails_path %></button>
+
+<button class= 'btn btn-secondary'><%= link_to "Create the Doses", new_cocktail_dose_path(@cocktail) %></button>
+
+
+
+<% @cocktail.doses.each do | dose | %>
+  <li>dose: <%= dose.description %> </li>
+  <li>ingredient: <%= dose.ingredient.name %> </li>
+<% end %>
+
+

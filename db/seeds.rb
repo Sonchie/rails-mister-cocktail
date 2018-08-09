@@ -6,6 +6,9 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
+
+# Ingredients
+
 require "open-uri"
 require "yaml"
 
@@ -23,13 +26,3 @@ end
 puts 'Finished!'
 
 
-
-
-# require 'json'
-# require 'open-uri'
-
-# url = 'https://api.github.com/users/ssaunier'
-# user_serialized = open(url).read
-# user = JSON.parse(user_serialized)
-
-# puts "#{user['name']} - #{user['bio']}"

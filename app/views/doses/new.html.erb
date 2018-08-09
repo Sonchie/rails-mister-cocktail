@@ -1,0 +1,25 @@
+<h1>DOSES#new</h1>
+<p>Create new ingredient - dose pairs for existing cocktail</p>
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-sm-10 col-sm-offset-1">
+      <h1>Update the cocktail recipe for <%= @cocktail.name %></h1>
+      <%= simple_form_for [@cocktail, @dose] do |f| %>
+        <%= f.input :description %>
+        <%= f.association :ingredient %>
+        <%= f.submit class: 'btn btn-primary' %>
+      <% end %>
+    </div>
+  </div>
+</div>
+
+<button class= 'btn btn-secondary'><%= link_to "Back to Home", cocktails_path %></button>
+
+
+
+<!-- /cocktails/:cocktail_id/doses/new -->
+
+<!-- `form_for([@restaurant, @review])`  POST **`restaurant_reviews_path`**
+'form_for([@restaurant, @review])` POST **`cocktail_doses_path`** -->
