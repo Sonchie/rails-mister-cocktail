@@ -5,7 +5,6 @@ class Dose < ApplicationRecord
   validates :cocktail, presence: true
   validates :ingredient, presence: true
   validates_uniqueness_of :cocktail, scope: :ingredient
-  # add_index :doses, [:cocktail_id, :ingredient_id], unique: true
 end
 
 # A dose belongs to an ingredient
