@@ -1,13 +1,18 @@
 <div class="wrapper-main">
-  <div class="banner">
 
+  <div class="banner-container">
+    <div class="banner" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url(<%= image_path 'cocktail-bar.jpg' %>)">
+    </div>
   </div>
+
+  <div class="cards-section">
+    <h3>Featured cocktails</h3>
   <div class="cards-container">
 
   <div class="row">
-  <div class="col-sm-6 col-md-4">
-    <div class="thumbnail">
-      <img src="https://source.unsplash.com/featured/?cocktails" alt="random cocktails">
+  <div class="col-sm-6 col-md-3">
+    <div class="card">
+      <%= image_tag "blueberries.jpg", id:"thumbnail" %>
       <div class="caption">
         <h3>Thumbnail label</h3>
         <p>...</p>
@@ -15,9 +20,9 @@
       </div>
     </div>
   </div>
-  <div class="col-sm-6 col-md-4">
-    <div class="thumbnail">
-      <img src="https://source.unsplash.com/featured/?cocktails" alt="random cocktails">
+  <div class="col-sm-6 col-md-3">
+    <div class="card">
+      <%= image_tag "fresh.jpg", id:"thumbnail" %>
       <div class="caption">
         <h3>Thumbnail label</h3>
         <p>...</p>
@@ -25,9 +30,19 @@
       </div>
     </div>
   </div>
-  <div class="col-sm-6 col-md-4">
-    <div class="thumbnail">
-      <img src="https://source.unsplash.com/featured/?cocktails" alt="random cocktails">
+  <div class="col-sm-6 col-md-3">
+    <div class="card">
+      <%= image_tag "good-glass.jpg", id:"thumbnail" %>
+      <div class="caption">
+        <h3>Thumbnail label</h3>
+        <p>...</p>
+        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6 col-md-3">
+    <div class="card">
+      <%= image_tag "minty.jpg", id:"thumbnail" %>
       <div class="caption">
         <h3>Thumbnail label</h3>
         <p>...</p>
@@ -36,13 +51,14 @@
     </div>
   </div>
 </div>
+</div>
 
 
 
 
 
 
-
+<div class="cocktails-list">
 
 
   <% @cocktails.each do |cocktail| %>
@@ -54,7 +70,7 @@
 <button class= 'btn btn-secondary'><%= link_to "Create a Cocktail", new_cocktail_path %></button>
 
 
-
+</div>
 
 
 

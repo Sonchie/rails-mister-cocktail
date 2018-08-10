@@ -3,8 +3,39 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 .footer {
   background-color: #e5e9ea;
-  position: fixed; left: 0; bottom: 0; width: 100%;
+  // position: fixed; left: 0; bottom: 0; width: 100%;
   color: #527f71;
   text-align: center;
 }
 
+.banner {
+  color: white;
+  text-align: center;
+  height: 100vh;
+  // calc(100vh - 70px);
+  background-size: cover;
+}
+
+.header{
+  position: fixed; left: 0; top: 0; width: 100%;
+  opacity: 1;
+}
+
+#thumbnail {
+  height: 300px;
+  width: 100%;
+}
+
+.cards-section {
+  background-color: #EBEBE9;
+
+}
+
+.cards-section h3 {
+  padding-top: 20px;
+}
+
+
+.card {
+  background-color: white;
+}
